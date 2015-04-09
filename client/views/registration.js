@@ -23,4 +23,11 @@ if(Meteor.isClient){
             console.log('Form Submitted');
         }
     })
+
+    Tracker.autorun(function() {
+        if (Meteor.user()) {
+            console.log("congrats");
+            Router.go('/myrooms')
+        }
+    });
 }
