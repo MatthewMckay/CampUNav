@@ -2,13 +2,13 @@
 <head>
 </head>
 <template name="LoginLayout">
-    <ul class="table-view">
-        <li class="table-view-cell">
-            {{> yield "rg"}}
-        </li>
-        <li class="table-view-cell">
-            {{> yield}}
-        </li>
-    </ul>
+    <body class="lgbody">
+        {{> yield "header"}}
 
+    <div class="lgcontent">
+        {{> yield "rg"}}
+
+        {{> yield}}
+    </div>
+    </body>
 </template>

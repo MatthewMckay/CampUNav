@@ -1,11 +1,10 @@
 
    <template name="register">
        <div class="card">
-           <form>
-               email
-               <input type="email" id="rEml" value="email@domain.com">
-               password
-               <input type="password" id="rPwd" value="JohnnyAppleseed123">
+           <form class="input-group">
+               <label for="rEml"></label>
+               <input type="email" id="rEml" placeholder="email@domain.com">
+               <input type="password" id="rPwd" placeholder="JohnnyAppleseed123">
                <input type="submit" value="Register">
            </form>
        </div>
@@ -13,7 +12,7 @@
 
    <template name="login">
        <div class="card">
-           <form>
+           <form class="input-group">
                <input type="email" id="lEml">
                <input type="password" id="lPwd">
                <input type="submit" value="Login">

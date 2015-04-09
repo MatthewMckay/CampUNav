@@ -5,7 +5,8 @@
 # but you can also edit it by hand.
 
 meteor-platform
-insecure
 iron:router
 http
 pcjpcj2:ratchet
+accounts-ui
+accounts-password
