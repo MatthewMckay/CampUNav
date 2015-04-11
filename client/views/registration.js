@@ -1,6 +1,8 @@
 /**
  * Created by matthewmckay on 4/8/15.
  */
+
+
 if(Meteor.isClient){
     Template.register.events({
         'submit form': function(event, template){
@@ -12,6 +14,14 @@ if(Meteor.isClient){
                 email: emailVar,
                 password: passwordVar
             });
+            if (Meteor.user()) {
+                console.log("congrats");
+                Router.go('/myrooms');
+            }
+            else
+            {
+                console.log('something went wrong')
+            }
         }
     })
 
@@ -21,13 +31,33 @@ if(Meteor.isClient){
             var emailVar = template.find('#lEml').value;
             var passwordVar = template.find('#lPwd').value;
             console.log('Form Submitted');
+            Meteor.loginWithPassword(emailVar, passwordVar, function() {
+                if (Meteor.user()) {
+                    console.log("congrats");
+                    Router.go('/myrooms');
+                }
+                else {
+                    console.log('something went wrong')
+                }
+            });
         }
     })
 
-    Tracker.autorun(function() {
+/*    Tracker.autorun(function() {
         if (Meteor.user()) {
             console.log("congrats");
-            Router.go('/myrooms')
+            Router.go('/myrooms');
         }
+        else
+            console.log("please login")
+    });*/
+
+    Template.ftr.events({
+       'click .logout': function(event){
+           event.preventDefault();
+           Meteor.logout(function() {
+              Router.go('/');
+           });
+       }
     });
 }

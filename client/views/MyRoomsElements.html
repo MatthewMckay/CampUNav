@@ -1,7 +1,25 @@
-<template name="content">
-    <p>Youre logged in</p>
+<template name="room-content">
+    <div style="width: 95%; margin: 50px auto auto;">
+                <select style="color: #00f030; background: rgba(0,240,48,.1); border: 1px solid #00f030;
+            border-top-left-radius: 25px; height: 50px; max-width: 50%;
+            margin: auto; float: left;">
+                <option>GREEN</option>
+                </select>
+                <select style="color: #00f030; background: rgba(0,240,48,.1); border: 1px solid #00f030;
+            border-top-right-radius: 25px; height: 50px; width: 50%;
+            margin: auto; float: left;">
+                    <option>BLUE</option>
+                </select>
+    </div>
+    <button style="width: 95%; height: 50px; margin: -1px 2.5%; border: 1px solid #00f030; background: rgba(0,240,48,.1);color: #00f030;">
+        SEARCH BY COURSE
+    </button>
 </template>
 
 <template name="ftr">
-    <p><a href="/" class="logout">Logout</a></p>
+<p>
+        <button type="button" class="logout" value="Logout">Logout</button>
+
+        </p>
+
 </template>
