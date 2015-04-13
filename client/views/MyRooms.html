@@ -4,8 +4,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet-src.js"></script>
 </head>
 <template name="MyRoomsLayout">
-    <body class="lgbody">
-        {{> yield "footer"}}
+    <body class="lgbody" allowscrolling="true">
+        {{> yield "header"}}
         {{> yield}}
         {{> yield "footer"}}
     </body>

@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d02e1169-04af-4c57-9dc3-590f80007287" name="Default" comment="added style to login">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/locket-map.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/AppHeader.html" afterPath="$PROJECT_DIR$/client/views/AppHeader.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/publications.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/roomsDB.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/MyRooms.html" afterPath="$PROJECT_DIR$/client/views/MyRooms.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/MyRoomsElements.html" afterPath="$PROJECT_DIR$/client/views/MyRoomsElements.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/login.html" afterPath="$PROJECT_DIR$/client/views/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/loginheader.html" afterPath="$PROJECT_DIR$/client/views/loginheader.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/loginstyles.css" afterPath="$PROJECT_DIR$/client/views/loginstyles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/packages" afterPath="$PROJECT_DIR$/.meteor/packages" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/registration.js" afterPath="$PROJECT_DIR$/client/views/registration.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/router.js" afterPath="$PROJECT_DIR$/lib/router.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -32,11 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="registration.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="registration.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/views/registration.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.09202454">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state vertical-scroll-proportion="-12.111111">
+              <caret line="67" column="36" selection-start-line="67" selection-start-column="36" selection-end-line="67" selection-end-column="36" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -44,27 +43,71 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyRoomsElements.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MyRoomsElements.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/views/MyRoomsElements.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.625">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.61290324">
+              <caret line="45" column="88" selection-start-line="45" selection-start-column="88" selection-end-line="45" selection-end-column="88" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#select#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#select#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#form#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#1;n#form#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#2;n#form#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#list#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#0;n#list#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#li#0;n#list#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#span#0;n#li#0;n#list#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#li#0;n#list#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#span#1;n#li#0;n#list#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#2;n#li#0;n#list#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#span#2;n#li#0;n#list#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#3;n#li#0;n#list#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#span#3;n#li#0;n#list#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#4;n#li#0;n#list#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#5;n#li#0;n#list#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#span#5;n#li#0;n#list#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#1;n#list#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#li#1;n#list#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#span#1;n#li#1;n#list#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#2;n#list#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#li#2;n#list#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#list#0;n#div#1;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#0;n#list#0;n#div#1;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#li#0;n#list#0;n#div#1;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#li#0;n#list#0;n#div#1;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#2;n#li#0;n#list#0;n#div#1;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#3;n#li#0;n#list#0;n#div#1;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#4;n#li#0;n#list#0;n#div#1;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#5;n#li#0;n#list#0;n#div#1;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#1;n#list#0;n#div#1;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#li#1;n#list#0;n#div#1;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#span#1;n#li#1;n#list#0;n#div#1;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#2;n#list#0;n#div#1;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#li#2;n#list#0;n#div#1;n#template#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="locket-map.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/views/locket-map.html">
+      <file leaf-file-name="roomsDB.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/roomsDB.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.375">
-              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#46#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="publications.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/publications.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+              <folding>
+                <element signature="e#0#46#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -72,29 +115,21 @@
       <file leaf-file-name="MyRooms.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/views/MyRooms.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.142857">
+            <state vertical-scroll-proportion="-4.375">
               <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginElements.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/views/LoginElements.html">
+      <file leaf-file-name="router.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.375">
-              <caret line="15" column="74" selection-start-line="15" selection-start-column="74" selection-end-line="15" selection-end-column="74" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="loginheader.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/views/loginheader.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.125">
-              <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#45#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -109,23 +144,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="router.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/router.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#45#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="loginstyles.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/views/loginstyles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+            <state vertical-scroll-proportion="-7.6666665">
+              <caret line="114" column="6" selection-start-line="114" selection-start-column="6" selection-end-line="114" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -136,9 +159,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
         <option value="Html5" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -164,11 +187,13 @@
         <option value="$PROJECT_DIR$/client/views/locket-map.html" />
         <option value="$PROJECT_DIR$/client/views/AppHeader.html" />
         <option value="$PROJECT_DIR$/client/views/loginheader.html" />
+        <option value="$PROJECT_DIR$/lib/roomsDB.js" />
+        <option value="$PROJECT_DIR$/server/publications.js" />
         <option value="$PROJECT_DIR$/lib/router.js" />
         <option value="$PROJECT_DIR$/client/views/loginstyles.css" />
+        <option value="$PROJECT_DIR$/client/views/registration.js" />
         <option value="$PROJECT_DIR$/client/views/MyRooms.html" />
         <option value="$PROJECT_DIR$/client/views/MyRoomsElements.html" />
-        <option value="$PROJECT_DIR$/client/views/registration.js" />
       </list>
     </option>
   </component>
@@ -225,6 +250,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="CampUNav" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CampUNav" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CampUNav" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -464,11 +503,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/loginheader.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.125">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/LoginElements.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.375">
+          <caret line="15" column="74" selection-start-line="15" selection-start-column="74" selection-end-line="15" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/views/locket-map.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.375">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        <state vertical-scroll-proportion="-11.875">
+          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/roomsDB.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#46#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/publications.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#46#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/loginstyles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.6666665">
+          <caret line="114" column="6" selection-start-line="114" selection-start-column="6" selection-end-line="114" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/registration.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.111111">
+          <caret line="67" column="36" selection-start-line="67" selection-start-column="36" selection-end-line="67" selection-end-column="36" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -483,64 +584,60 @@
     <entry file="file://$PROJECT_DIR$/lib/router.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
           <folding>
             <element signature="e#0#45#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/LoginElements.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.375">
-          <caret line="15" column="74" selection-start-line="15" selection-start-column="74" selection-end-line="15" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/loginheader.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.125">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/views/MyRooms.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.142857">
+        <state vertical-scroll-proportion="-4.375">
           <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/loginstyles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/MyRoomsElements.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.625">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.61290324">
+          <caret line="45" column="88" selection-start-line="45" selection-start-column="88" selection-end-line="45" selection-end-column="88" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#select#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#select#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/registration.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09202454">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#form#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#1;n#form#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#2;n#form#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#list#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#list#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#li#0;n#list#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#span#0;n#li#0;n#list#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#li#0;n#list#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#span#1;n#li#0;n#list#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#2;n#li#0;n#list#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#span#2;n#li#0;n#list#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#3;n#li#0;n#list#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#span#3;n#li#0;n#list#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#4;n#li#0;n#list#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#5;n#li#0;n#list#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#span#5;n#li#0;n#list#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#1;n#list#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#li#1;n#list#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#span#1;n#li#1;n#list#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#2;n#list#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#li#2;n#list#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#list#0;n#div#1;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#list#0;n#div#1;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#li#0;n#list#0;n#div#1;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#li#0;n#list#0;n#div#1;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#2;n#li#0;n#list#0;n#div#1;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#3;n#li#0;n#list#0;n#div#1;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#4;n#li#0;n#list#0;n#div#1;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#5;n#li#0;n#list#0;n#div#1;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#1;n#list#0;n#div#1;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#li#1;n#list#0;n#div#1;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#span#1;n#li#1;n#list#0;n#div#1;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#2;n#list#0;n#div#1;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#li#2;n#list#0;n#div#1;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,25 +1,96 @@
-<template name="room-content">
-    <div style="width: 95%; margin: 50px auto auto;">
-                <select style="color: #00f030; background: rgba(0,240,48,.1); border: 1px solid #00f030;
-            border-top-left-radius: 25px; height: 50px; max-width: 50%;
-            margin: auto; float: left;">
-                <option>GREEN</option>
-                </select>
-                <select style="color: #00f030; background: rgba(0,240,48,.1); border: 1px solid #00f030;
-            border-top-right-radius: 25px; height: 50px; width: 50%;
-            margin: auto; float: left;">
-                    <option>BLUE</option>
-                </select>
+<template name="roomcontent">
+    <form id="bldgRmSrch">
+        <label style="color: #00f030;">Department</label>
+        <select>
+            <option>CM</option>
+            <option>CSC</option>
+            <option>MATH</option>
+            <option>MILS</option>
+        </select>
+        <label style="color: #00f030;">Course</label>
+        <select>
+            <option>3000</option>
+            <option>3001</option>
+            <option>3002</option>
+        </select>
+        <label style="color: #00f030;">Section</label>
+        <select>
+            <option>001</option>
+            <option>002</option>
+            <option>003</option>
+        </select>
+    </form>
+    <nav class="nav-n">
+        <ul class="list-bar" id="blob">
+            <li class="li-l">BLDG  ROOM  DEPT  CRSE  SECT
+
+            </li>
+        </ul>
+    </nav>
+    <div class="list-frame" id="blob1">
+        <list style="list-style: none">
+            <li style="height: 65px; padding: 20px; border-bottom: 1px inset #003010">
+                <span style="float: left">
+                    <div style="color: rgba(0,0,0,.5); width: 40px; text-align: center; border: 1px solid #00f030; border-radius: 12.5px; padding-left: 10px; padding-right: 10px; background-color: #009020">M</div>
+                </span>
+                <span style="float: left">
+                    <div style="color: rgba(0,0,0,.5); width: 40px; text-align: center; border: 1px solid #00f030; border-radius: 12.5px; padding-left: 10px; padding-right: 10px; background-color: #009020">T</div>
+                </span>
+                <span style="float: left">
+                    <div style="color: rgba(0,0,0,.5); width: 40px; text-align: center; border: 1px solid #00f030; border-radius: 12.5px; padding-left: 10px; padding-right: 10px; background-color: #009020">W</div>
+                </span>
+                <span style="float: left">
+                    <div style="color: rgba(0,0,0,.5); width: 40px; text-align: center; border: 1px solid #00f030; border-radius: 12.5px; padding-left: 10px; padding-right: 10px; background-color: #009020">TH</div>
+                </span>
+                <span style="float: left">
+                    <div style="color: rgba(0,0,0,.5); width: 40px; text-align: center; border: 1px solid #00f030; border-radius: 12.5px; padding-left: 10px; padding-right: 10px; background-color: #009020">F</div>
+                </span>
+                <span style="float: right;">
+                    <div style="float: right; color: rgba(0,0,0,.5); border: 1px solid #00f030; border-radius: 12.5px; padding-left: 10px; padding-right: 10px; background-color: #009020">TI:ME</div>
+                </span>
+            </li>
+
+            <li style="height: 65px; padding: 20px; border-bottom: 1px inset #003010">
+                <span style="color: #00f030;">TEACHER</span>
+                <span><div style="float: right; color: #00f030; border: 1px solid #00f030; border-radius: 12.5px; padding-left: 10px; padding-right: 10px; background-color: #009020">OFFICE</div> </span>
+            </li>
+            <li style="height: 65px; padding: 20px; border-bottom: 1px inset #003010">
+                <button style="color: #00f030; position: relative; width: inherit">Take me here</button>
+            </li>
+        </list>
     </div>
-    <button style="width: 95%; height: 50px; margin: -1px 2.5%; border: 1px solid #00f030; background: rgba(0,240,48,.1);color: #00f030;">
-        SEARCH BY COURSE
-    </button>
+    <nav class="nav-n">
+        <ul class="list-bar" id="blo">
+            <li class="li-l">BLDG  ROOM  DEPT  CRSE  SECT
+
+            </li>
+        </ul>
+    </nav>
+    <div class="list-frame" id="blo1">
+        <list style="list-style: none">
+            <li style="height: 65px; padding: 20px; border-bottom: 1px inset #003010">
+                <span style="color: #00f030;float: left">M<input type="checkbox"> </span>
+                <span style="color: #00f030;float: left">T<input type="checkbox"> </span>
+                <span style="color: #00f030;float: left">W<input type="checkbox"> </span>
+                <span style="color: #00f030;float: left">T<input type="checkbox"> </span>
+                <span style="color: #00f030;float: left">F<input type="checkbox"> </span>
+                <span style="color: #00f030; float: right">TI:ME</span>
+            </li>
+
+            <li style="height: 65px; padding: 20px; border-bottom: 1px inset #003010">
+                <span style="color: #00f030;">TEACHER</span>
+                <span><div style="float: right; color: #00f030; border: 1px solid #00f030; border-radius: 12.5px; padding-left: 10px; padding-right: 10px; background-color: #009020">OFFICE</div> </span>
+            </li>
+            <li style="height: 65px; padding: 20px; border-bottom: 1px inset #003010">
+                <button style="color: #00f030; position: relative; width: inherit">Take me here</button>
+            </li>
+        </list>
+    </div>
 </template>
 
 <template name="ftr">
 <p>
-        <button type="button" class="logout" value="Logout">Logout</button>
+        <button class="logout" value="Logout">Logout</button>
 
         </p>
-
 </template>

@@ -4,6 +4,9 @@
 
 
 if(Meteor.isClient){
+
+    Meteor.subscribe("rmsSaved");
+
     Template.register.events({
         'submit form': function(event, template){
             event.preventDefault();
@@ -43,15 +46,6 @@ if(Meteor.isClient){
         }
     })
 
-/*    Tracker.autorun(function() {
-        if (Meteor.user()) {
-            console.log("congrats");
-            Router.go('/myrooms');
-        }
-        else
-            console.log("please login")
-    });*/
-
     Template.ftr.events({
        'click .logout': function(event){
            event.preventDefault();
@@ -60,4 +54,24 @@ if(Meteor.isClient){
            });
        }
     });
+
+    Template.roomcontent.events( {
+       'click .list-bar': function(event, template){
+           event.preventDefault();
+           console.log(event.currentTarget.id)
+           var x = "#" + event.currentTarget.id + "1"
+           console.log(x);
+           if (template.find(x).style.height == "195px"){
+               template.find(x).style.height = "0";
+           }
+           else {
+               var course = document.getElementsByClassName('list-frame');
+               for (var i = 0; i < course.length; i++) {
+                   course[i].style.height = "0";
+               }
+               template.find(x).style.height = "195px";
+           }
+       }
+    });
+
 }
