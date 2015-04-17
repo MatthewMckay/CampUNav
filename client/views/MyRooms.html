@@ -8,9 +8,7 @@
     <div style="height: 100%; width: 100%; background: rgba(73,32,126,.9); overflow: scroll;">
         {{> yield "header"}}
         {{> yield "form"}}
-        {{#each myRooms}}
-            {{> yield}}
-        {{/each}}
+        {{> yield}}
         {{> yield "footer"}}
     </div>
     </body>

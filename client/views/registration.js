@@ -50,11 +50,19 @@ if(Meteor.isClient) {
     });
 
     Template.ftr.events({
-        'click .logout': function (event) {
+        'click #logout': function (event) {
             event.preventDefault();
             Meteor.logout(function () {
                 Router.go('/');
             });
+        },
+        'click #maps': function (event) {
+            event.preventDefault();
+                Router.go('/maps');
+        },
+        'click #MyRooms': function (event) {
+            event.preventDefault();
+                Router.go('/myrooms');
         }
     });
 
@@ -85,8 +93,8 @@ if(Meteor.isClient) {
             var Depts = _.pluck(distinctDepts, 'department');
             Depts = _.sortBy(Depts, function (department) {return department;});
             return Depts;
-        },
-        Crse: function () {
+        }
+       /* Crse: function () {
             var courses = Courses.find().fetch();
             var distinctCrses = _.uniq(courses, false, function (d) {return d.course});
             var crse = _.pluck(distinctCrses, 'course');
@@ -99,6 +107,57 @@ if(Meteor.isClient) {
             var sect = _.pluck(distinctCrses, 'section');
             sect = _.sortBy(sect, function(section){return section;});
             return sect;
+        }*/
+    });
+
+    Template.roomform.events({
+        'change #DEPARTMENT': function (event, template) {
+            event.preventDefault();
+            var cs = template.find('#COURSE');
+            var length = cs.options.length;
+            for (var j = 0; j <= length; j++){
+                cs.remove(cs[j]);
+            }
+            var ss = template.find('#SECTION');
+            length = ss.options.length;
+            for (var k = 0; k < length; k++){
+                ss.remove(ss.k);
+            }
+            var dept = template.find('#DEPARTMENT').value;
+            var courses = Courses.find({department: dept}).fetch();
+            var distinctCrses =  _.uniq(courses, false, function (d) {return d.course});
+            var crse = _.pluck(distinctCrses, 'course');
+            crse = _.sortBy(crse, function (course) {return course;});
+            var sel = template.find('#COURSE');
+            for (var i = 0; i < crse.length; i++){
+                var option = document.createElement("option");
+                option.value = crse[i];
+                option.text = crse[i];
+                sel.add(option, sel[i]);
+            }
+        },
+        'change #COURSE': function (event, template) {
+            event.preventDefault();
+            var ss = template.find('#SECTION');
+            var length = ss.options.length;
+            for (var i = 0; i < length; i++){
+                ss.remove(ss[i]);
+            }
+            var dept = template.find('#DEPARTMENT').value;
+            var course = template.find('#COURSE').value;
+            console.log(dept+' '+course);
+            var sections = Courses.find({$and: [{department: dept}, {course: course}]}).fetch();
+            var distinctSects =  _.uniq(sections, false, function (d) {return d.section});
+            var sect = _.pluck(distinctSects, 'section');
+            sect = _.sortBy(sect, function (section) {return section;});
+            var sel = template.find('#SECTION');
+            for (var i = 0; i < sect.length; i++){
+                var option = document.createElement("option");
+                option.value = sect[i];
+                option.text = sect[i];
+                sel.add(option, sel[i]);
+            }
         }
+
     });
 }

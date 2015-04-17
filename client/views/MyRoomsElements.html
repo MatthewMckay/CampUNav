@@ -8,15 +8,9 @@
         </select>
         <label style="color: #00f030;" for="COURSE">Course</label>
         <select id="COURSE">
-            {{#each Crse}}
-                <option>{{this}}</option>
-            {{/each}}
         </select>
         <label style="color: #00f030;" for="SECTION">Section</label>
         <select id="SECTION">
-            {{#each Sect}}
-                <option value={{this}}>{{this}}</option>
-            {{/each}}
         </select>
     </form>
     </template>
@@ -67,7 +61,8 @@
 
 <template name="ftr">
 <p>
-        <button class="logout" value="Logout">Logout</button>
-
+        <button class="logout" value="Logout" id="logout">Logout</button>
+    <button class="logout"  id="maps">Maps</button>
+    <button class="logout"  id="MyRooms">My Rooms</button>
         </p>
 </template>
