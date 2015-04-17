@@ -1,0 +1,67 @@
+
+<head>
+  <title>ADMIN CAMPUNAV</title>
+</head>
+<template name="ADMIN">
+<body>
+  {{> yield}}
+</body>
+</template>
+
+<template name="addcollections">
+    <div>
+        <form id="ROOM" class="RM">
+            <input type="text" id="bldgf" placeholder="bldg">
+            <input type="text" id="rmnumf" placeholder="rm num">
+            <!-- roomID is a combination of the above two inputs -->
+
+            <input type="text" id="latf" placeholder="latitude">
+            <input type="text" id="lngf" placeholder="longitude">
+            <input type="submit" id="rmsf">
+        </form>
+    </div>
+    </template>
+<!--
+    <div>
+        <form id="COURSE" class="CRSE">
+            <input type="text" id="deptf" placeholder="DEPARTMENT  ABBREV">
+            <input type="text" id="crsef" placeholder="course">
+            <input type="text" id="sectf" placeholder="section">
+            < roomID is a combination of the above three inputs --
+
+            <label>M</label>
+            <input type="radio" id="mf">
+            <label>T</label>
+            <input type="radio" id="tf">
+            <label>W</label>
+            <input type="radio" id="wf">
+            <label>TH</label>
+            <input type="radio" id="thf">
+            <label>F</label>
+            <input type="radio" id="ff">
+
+            <input type="text" id="timef" placeholder="TIME">
+            <input type="text" id="tidcf" placeholder="teacher ID">
+            <input type="text" id="rmidf" placeholder="buildingRoomNumNoSpaces">
+            <input type="submit" id="cssf">
+        </form>
+    </div>
+
+    <div>
+        <form id="TEACHER" class="TCHR">
+            <input type="text" id="namef" placeholder="TEACHER LAST NAME, FI">
+            <input type="text" id="tidtf" placeholder="teacher ID">
+            <input type="submit" id="tchsf">
+        </form>
+    </div>
+
+    <div>
+        <form id="WAYPOINT" class="WP">
+            <input type="text" id="latf" placeholder="Latitude">
+            <input type="text" id="lngf" placeholder="longitude">
+            IFofD<input type="radio" id="IFofDf">
+            ROOM<input type="radio" id="isRoomf">
+            <input type="submit" id="wpsf">
+        </form>
+    </div>
+</template> -->

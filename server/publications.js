@@ -6,5 +6,16 @@ Meteor.publish("rmsSaved", function () {
 });
 
 Meteor.publish("courses", function() {
-   return Courses.find().fetch();
+   return Courses.find();
+});
+
+Meteor.publish("rooms", function() {
+    return Rooms.find();
+});
+
+Meteor.publish("teacher", function() {
+    return Teacher.find();
+});
+Meteor.publish("waypoint", function() {
+    return Waypoint.find();
 });

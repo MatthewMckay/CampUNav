@@ -1,25 +1,28 @@
-<template name="roomcontent">
+<template name="roomform">
     <form id="bldgRmSrch">
-        <label style="color: #00f030;">Department</label>
-        <select>
-            <option>CM</option>
-            <option>CSC</option>
-            <option>MATH</option>
-            <option>MILS</option>
+        <label style="color: #00f030;" for="DEPARTMENT">Department</label>
+        <select id="DEPARTMENT">
+            {{#each Dept}}
+                <option value={{this}}>{{this}}</option>
+            {{/each}}
         </select>
-        <label style="color: #00f030;">Course</label>
-        <select>
-            <option>3000</option>
-            <option>3001</option>
-            <option>3002</option>
+        <label style="color: #00f030;" for="COURSE">Course</label>
+        <select id="COURSE">
+            {{#each Crse}}
+                <option>{{this}}</option>
+            {{/each}}
         </select>
-        <label style="color: #00f030;">Section</label>
-        <select>
-            <option>001</option>
-            <option>002</option>
-            <option>003</option>
+        <label style="color: #00f030;" for="SECTION">Section</label>
+        <select id="SECTION">
+            {{#each Sect}}
+                <option value={{this}}>{{this}}</option>
+            {{/each}}
         </select>
     </form>
+    </template>
+
+
+    <template name="roomcontent">
     <nav class="nav-n">
         <ul class="list-bar" id="blob">
             <li class="li-l">BLDG  ROOM  DEPT  CRSE  SECT
@@ -59,34 +62,8 @@
             </li>
         </list>
     </div>
-    <nav class="nav-n">
-        <ul class="list-bar" id="blo">
-            <li class="li-l">BLDG  ROOM  DEPT  CRSE  SECT
-
-            </li>
-        </ul>
-    </nav>
-    <div class="list-frame" id="blo1">
-        <list style="list-style: none">
-            <li style="height: 65px; padding: 20px; border-bottom: 1px inset #003010">
-                <span style="color: #00f030;float: left">M<input type="checkbox"> </span>
-                <span style="color: #00f030;float: left">T<input type="checkbox"> </span>
-                <span style="color: #00f030;float: left">W<input type="checkbox"> </span>
-                <span style="color: #00f030;float: left">T<input type="checkbox"> </span>
-                <span style="color: #00f030;float: left">F<input type="checkbox"> </span>
-                <span style="color: #00f030; float: right">TI:ME</span>
-            </li>
-
-            <li style="height: 65px; padding: 20px; border-bottom: 1px inset #003010">
-                <span style="color: #00f030;">TEACHER</span>
-                <span><div style="float: right; color: #00f030; border: 1px solid #00f030; border-radius: 12.5px; padding-left: 10px; padding-right: 10px; background-color: #009020">OFFICE</div> </span>
-            </li>
-            <li style="height: 65px; padding: 20px; border-bottom: 1px inset #003010">
-                <button style="color: #00f030; position: relative; width: inherit">Take me here</button>
-            </li>
-        </list>
-    </div>
 </template>
+
 
 <template name="ftr">
 <p>

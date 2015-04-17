@@ -4,9 +4,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet-src.js"></script>
 </head>
 <template name="MyRoomsLayout">
-    <body class="lgbody" allowscrolling="true">
+    <body class="lgbody">
+    <div style="height: 100%; width: 100%; background: rgba(73,32,126,.9); overflow: scroll;">
         {{> yield "header"}}
-        {{> yield}}
+        {{> yield "form"}}
+        {{#each myRooms}}
+            {{> yield}}
+        {{/each}}
         {{> yield "footer"}}
+    </div>
     </body>
 </template>

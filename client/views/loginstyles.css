@@ -7,9 +7,7 @@
 }
 
 .lgbody {
-    background-color: #001060;
-    background: radial-gradient(farthest-corner at 50% 50%,rgba(0,0,20,.8),rgba(0,0,10,1));
-    overflow: scroll;
+    background-image: url("/tiger640X1136.png");
 }
 
 .top-bar {
@@ -49,14 +47,14 @@
 
 
 #map {
-    height: 200px;
+    height: 600px;
     width:  90%;
     margin: 9px auto auto;
     border: 2px solid #a1a1a1;
 }
 
 .map-div {
-    height: 220px;
+    height: 620px;
     width:  95%;
     margin-top: 20px;
     margin-left: auto;
@@ -74,21 +72,7 @@
     font-weight: lighter;
 }
 
-.app-drop-down {
-    background-color: #002010;
-    color: #00f030;
-}
 
-.selectors {
-    color: #00f030;
-    background: rgba(0, 240, 48, .1);
-    border: 1px solid #00f030;
-    border-top-left-radius: 25px;
-    height: 50px;
-    max-width: 50%;
-    margin: auto;
-    float: left;
-}
 
 input:focus,
 select:focus,
@@ -101,21 +85,10 @@ button:focus {
     padding: 20px 20px;
 }
 
-.nav-n .ul-u .list-frame {
-    display: none;
-}
-
-
-.nav-n .ul-u:hover .list-frame{
-    display: block;
-}
-.nav-n .ul-u:hover + .ul-u{
-    margin: 194px 0px 0px;
-}
 .list-bar{
-    background: linear-gradient(top, rgba(0,240,48,.1) 0%, rgba(0,240,48,.05) 100%);
-    background: -moz-linear-gradient(top, rgba(0,240,48,.1) 0%, rgba(0,240,48,.05) 100%);
-    background: -webkit-linear-gradient(top, rgba(0,240,48,.1) 0%, rgba(0,240,48,.05) 100%);
+    background: linear-gradient(top, rgba(253,208,35,.6) 0%, rgba(253,208,35,.3) 100%);
+    background: -moz-linear-gradient(top, rgba(253,208,35,.6) 0%, rgba(253,208,35,.3) 100%);
+    background: -webkit-linear-gradient(top, rgba(253,208,35,.6) 0%, rgba(253,208,35,.3) 100%);
     box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
     padding: 0px 0px;
     border-radius: 10px;
